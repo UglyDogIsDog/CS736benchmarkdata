@@ -1,0 +1,41 @@
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.483 $
+		Compiled for 32 bit mode.
+		Build: Windows 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Wed Dec 15 06:32:12 2021
+
+	Record Size 4 kB
+	Auto Mode
+	Using maximum file size of 1024 kilobytes.
+	Using minimum file size of 4 kilobytes.
+	Using mmap files
+	Command line used: iozone -r 4 -a -g 1024 -n 4 -B
+	Output is in kBytes/sec
+	Time Resolution = 0.000000 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+                                                              random    random     bkwd    record    stride                                    
+              kB  reclen    write  rewrite    read    reread    read     write     read   rewrite      read                                    
+               4       4   634920   701754   327868   952380   975609   677966  1379310    519480    909090
+               8       4   672268  1355932   851063   879120  1860465  1739130  1052631   1428571   1428571
+              16       4  1720430  1280000  1797752  2133333  2133333  2711864  2580645   2909090   3076923
+              32       4  1415929  3232323  2601626  2689075  3516483  3368421  2782608   5714285   6808510
+              64       4  1828571  2723404  3076923  2949308  2844444  3657142  3999999   9846153   9999999
+             128       4  3069544  3256997  3033175  3114355  3040380  3962848  4012539  22456140   3137254
+             256       4   532556   186100   408098   419328   242769   250073   181534    402895    151497
+             512       4   928208   204057   305088   309814   229298   250048   115025   1547295    168742
+            1024       4  1211690   254378   323671   308108   204260   217428   285435   6432160    173447
+
+iozone test complete.

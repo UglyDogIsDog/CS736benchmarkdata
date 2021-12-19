@@ -1,0 +1,43 @@
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.492 $
+		Compiled for 64 bit mode.
+		Build: linux-AMD64 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Wed Dec 15 00:23:25 2021
+
+	Record Size 4 kB
+	Auto Mode
+	Using maximum file size of 1024 kilobytes.
+	Using minimum file size of 4 kilobytes.
+	Using mmap files
+	Command line used: ./iozone -r 4 -a -g 1024 -n 1 -B
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+                                                              random    random     bkwd    record    stride                                    
+              kB  reclen    write  rewrite    read    reread    read     write     read   rewrite      read                                    
+               4       4   191072   125384   391938   336853  4000000   267128   358443    129248    366269
+               8       4   163039   243490   716887   673706  4298711   534257   570598    258497    673706
+              16       4   334198   379562  1433775  1224487  5240547  1004538  1320892    457127   1141196
+              32       4   652157   710877  2321877  3970269  5201089  1066865  2009076   1033989   2694826
+              64       4   598110  1066042  3958892  4018152 12902017   674790  3203069   3203069   4564786
+             128       4   985435  1455701  4759253  4717434 12842051  1030846  5074121  11720614   6406138
+             256       4   809878  1814348  5569035  6249745  7120034  1752173  4117018  10245071   5117791
+             512       4  1096322  1711407  6018636  6018636 13109944  1854787  6821616  13522711   6246213
+            1024       4  1150600  2060128  5120336  9569770 13643232  2094282  7008693  27744245   7066349
+
+iozone test complete.
+Timer resolution is poor. Some small transfers may have 
+reported inaccurate results. Sizes 4 kBytes and below.

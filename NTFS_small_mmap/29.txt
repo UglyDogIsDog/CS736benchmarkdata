@@ -1,0 +1,41 @@
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.483 $
+		Compiled for 32 bit mode.
+		Build: Windows 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Wed Dec 15 06:31:55 2021
+
+	Record Size 4 kB
+	Auto Mode
+	Using maximum file size of 1024 kilobytes.
+	Using minimum file size of 4 kilobytes.
+	Using mmap files
+	Command line used: iozone -r 4 -a -g 1024 -n 4 -B
+	Output is in kBytes/sec
+	Time Resolution = -0.000000 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+                                                              random    random     bkwd    record    stride                                    
+              kB  reclen    write  rewrite    read    reread    read     write     read   rewrite      read                                    
+               4       4   533333   588235   540540  1379310  1290322  1142857  1599999   1025641   1142857
+               8       4   963855  1038961  1212121  1249999  1025641  1568627  1311475   1860465   1999999
+              16       4  1012658  1616161  2499999  2909090  2666666  2539682  2388059   3137254   3809523
+              32       4  2370370  2064516  2388059  2388059  2335766  3298969  3047619   6808510   7804878
+              64       4  2819383  2509803  2758620  2689075  2857142  2746781  3478260  11851851  13617021
+             128       4  2628336  3121951  4183006  4142394  3033175  2956120  4142394  21694915   3962848
+             256       4   746791   235488   318566   333724   193163   179548   145810   2182438    193836
+             512       4  1154713   243844   319700   288645   193667   197074   197158   4767225    216481
+            1024       4  1310971   331102   401301   398784   253271   265635   311995   8576214    251634
+
+iozone test complete.

@@ -1,0 +1,41 @@
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.492 $
+		Compiled for 64 bit mode.
+		Build: linux-AMD64 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Wed Dec 15 00:23:38 2021
+
+	Record Size 4 kB
+	Auto Mode
+	Using maximum file size of 1024 kilobytes.
+	Using minimum file size of 4 kilobytes.
+	Using mmap files
+	Command line used: ./iozone -r 4 -a -g 1024 -n 1 -B
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+                                                              random    random     bkwd    record    stride                                    
+              kB  reclen    write  rewrite    read    reread    read     write     read   rewrite      read                                    
+               4       4   330223   200191   366269   267128   806376   210225   330223    147419    221318
+               8       4   248909   241736   732538   494861  4298711   570598   420451    320158    400383
+              16       4   445002   469931  1465076  1347413  5240547   665724  1141196    457127   1465076
+              32       4   552778   742331  2448974  2641785 10481095  1101900   995638    665083   2282393
+              64       4   735831  1087638  3738358  3738358 10821524  1304314  2467108   1679761   3738358
+             128       4   711270  1440082  2098744  4717434 11720614   948860  4759253   5545860   4557257
+             256       4  1011241  1855098  6107548  7735574  7965107  1938842  3197509   5938650   3557725
+             512       4  1045103  1729323  6843354 12427157 13522711  1842059  3963567   7758090   6736026
+            1024       4  1104727  2098375  7644933  3712781  7066349  1503942  4396951  19719260   7369466
+
+iozone test complete.

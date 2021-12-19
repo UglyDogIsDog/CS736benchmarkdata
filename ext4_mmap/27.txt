@@ -1,0 +1,50 @@
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.492 $
+		Compiled for 64 bit mode.
+		Build: linux-AMD64 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Wed Dec  8 06:16:58 2021
+
+	Record Size 64 kB
+	Auto Mode
+	Using maximum file size of 16777216 kilobytes.
+	Using mmap files
+	Command line used: ./iozone -r 64 -a -g 16G -B
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+                                                              random    random     bkwd    record    stride                                    
+              kB  reclen    write  rewrite    read    reread    read     write     read   rewrite      read                                    
+              64      64  1392258  1599680  9318832  6421025 15972885  2772930  5860307   1638743   4988978
+             128      64  1858934  1319723  4934216  3218540  5545860  1618028  4557257   1377278  14200794
+             256      64   750445  1629830  4929815  4819184  7735574  1549845  3667079   2975955   5687020
+             512      64  1094088  1580419  6551087 11620224 11374040  2150051  6319739   7435738  10911694
+            1024      64  1151834  1657133  4550690  6172653  8593274  1605111  7369466  10557785  14820161
+            2048      64   911031  1817281  7609754 11770166  9149853  2122645  5868220  11983630   7789164
+            4096      64  1091977  1651623  6512939  8209013  8865630  1711005  5961494  18616995   7418527
+            8192      64  1102977  1853795  6708520  7502444  7915520  1863952  5457560  21558298   5915112
+           16384      64  1194855  1847108  6032360  6767854  7638208  3535533  6315660  23608403   7437329
+           32768      64  1458102  1959472  6799598  7370248  8436596  3451435  7159097  44223792   7063798
+           65536      64  1857963  2337898 10121506 10995641 10704883  3409262  7794459  46606809   7310231
+          131072      64  2072776  3128361  8377894 11425442 10955499  3593579  9898232  60175952   7909267
+          262144      64  2182948  3604202 11886508 11824256 11182216  3488422 10104244  27134495   9278516
+          524288      64  2321080  3638081 11803489 12575562 11795006  3591404 11660721  43444528  10709139
+         1048576      64  1476736  3706946 12580411 13241272 12211782  3428691 12585847  48943968  11807761
+         2097152      64   898684   939802 13393145 13735786 12428076   974618 13408048  53290661  12011305
+         4194304      64   585456   592276 13777382 13967375 12478880   576523 13663114  58279326  12402026
+         8388608      64   495055   352720  1357581  1360871   578039   229563   750163  63080340    927545
+        16777216      64   457703   338277   875481   874729   265768   154751   495399  66257854    403686
+
+iozone test complete.

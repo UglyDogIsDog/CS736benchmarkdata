@@ -1,0 +1,46 @@
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.483 $
+		Compiled for 32 bit mode.
+		Build: Windows 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Wed Dec  8 19:01:51 2021
+
+	Record Size 64 kB
+	Auto Mode
+	Using maximum file size of 16777216 kilobytes.
+	Using mmap files
+	Command line used: iozone -r 64 -a -g 16G -B
+	Output is in kBytes/sec
+	Time Resolution = 0.000000 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+                                                              random    random     bkwd    record    stride                                    
+              kB  reclen    write  rewrite    read    reread    read     write     read   rewrite      read                                    
+              64      64  3298969  2782608  3076923  3809523  5161290  4324324  3216080   3999999   4183006
+             128      64  3440860  2147651  4848484  4812030  4637681  4155844  4604316   6464646   7573964
+             256      64   820775   220822   344039   341561   260321   254043   245893    934306   1526535
+             512      64  1219047   285379   330109   337708   282124   287237   272195   2084690   2600304
+            1024      64  1595015   344757   427147   468285   317057   305790   299353   4593988   6247712
+            2048      64  1857764   304268   385288   448965   316254   319995   295207   8231511    372268
+            4096      64  1738687   472090   513206   510226   320080   317032   301802  15069904    318484
+            8192      64  1779129   410213   513308   552457   316588   314614   271572  22536451    304825
+           16384      64  1842389   523780   545616   569684   318957   315014   287821  35601912    303452
+           32768      64  1782118   527679   519948   571216   315617   310435   286830  42314049    291700
+           65536      64  1797575   547860   546292   571988   303949   309668   272158  44918437    274614
+          131072      64  1755655   552585   563686   574696   181602   224790   237472  51774371    226841
+          262144      64  1742921   559130   588633   582123   286752   283796   258399  48850045    239036
+          524288      64  1721421   568528   593539   594090   276354   284998   264926  60377497    265124
+         1048576      64  1759471   573338   591828   593116   255025   264961   255959  62965814    255761
+         2097152      64
+Mapping failed, errno 12 Flags = 1

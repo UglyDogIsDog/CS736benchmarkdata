@@ -1,0 +1,41 @@
+	Iozone: Performance Test of File I/O
+	        Version $Revision: 3.492 $
+		Compiled for 64 bit mode.
+		Build: linux-AMD64 
+
+	Contributors:William Norcott, Don Capps, Isom Crawford, Kirby Collins
+	             Al Slater, Scott Rhine, Mike Wisner, Ken Goss
+	             Steve Landherr, Brad Smith, Mark Kelly, Dr. Alain CYR,
+	             Randy Dunlap, Mark Montague, Dan Million, Gavin Brebner,
+	             Jean-Marc Zucconi, Jeff Blomberg, Benny Halevy, Dave Boone,
+	             Erik Habbinga, Kris Strecker, Walter Wong, Joshua Root,
+	             Fabrice Bacchella, Zhenghua Xue, Qin Li, Darren Sawyer,
+	             Vangel Bojaxhi, Ben England, Vikentsi Lapa,
+	             Alexey Skidanov, Sudhir Kumar.
+
+	Run began: Wed Dec 15 00:23:25 2021
+
+	Record Size 4 kB
+	Auto Mode
+	Using maximum file size of 1024 kilobytes.
+	Using minimum file size of 4 kilobytes.
+	Using mmap files
+	Command line used: ./iozone -r 4 -a -g 1024 -n 1 -B
+	Output is in kBytes/sec
+	Time Resolution = 0.000001 seconds.
+	Processor cache size set to 1024 kBytes.
+	Processor cache line size set to 32 bytes.
+	File stride size set to 17 * record size.
+                                                              random    random     bkwd    record    stride                                    
+              kB  reclen    write  rewrite    read    reread    read     write     read   rewrite      read                                    
+               4       4   142414   133358   336853   358443  1905268   366269   330223    128260    366269
+               8       4   166270   250769   732538   732538  3810537   673706   716887    266716    716887
+              16       4   516994   381721  1465076  1347413  8597422  1004538   885274    271909   1247244
+              32       4   845169   742331  2448974  2448974  6451008  1139314  1601534   1528576   2494489
+              64       4   712397  1049372  3541098  4018152 12902017   679917  3057153   3203069   3958892
+             128       4   870405  1618028  4135958 11720614  5325799   757430  2027414   3359523   2985839
+             256       4  1032636  1479379  5117791  3994490 10758322  1347557  5117791   9114515   5117791
+             512       4   973118  1968713  6319739  6319739 12797441  1645826  6652558  15037801   6319739
+            1024       4  1190795  2114908  7369466  6364746  7644933  2043465  7269678  23886714   6128613
+
+iozone test complete.
